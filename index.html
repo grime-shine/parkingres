@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parking Reservation App</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;400&family=Inter:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container" id="container">
+    <div id="model" class="model-display hidden">
+      <h4>Delete all Reservations?</h4>
+      <div class="btn-container">
+        <button class="btn-primary" id="yes-btn">Yes</button>
+        <button class="btn-primary" id="no-btn">No</button>
+      </div>
+    </div>
+  
+    <section class="top-section" id="top-section">
+    <!-- Parking Reservation submissions go here-->  
+    </section>
+ 
+
+  <div id ="menu-bar" class="menu-bar">
+      <h4 class="fs-6">Space #</h4>
+      <input type="text" id="spacenumber-input" maxlength="2">
+      <h4 class="fs-6">Name</h4> 
+      <input type="text" id="name-input" maxlength="25">
+      <h4 class="fs-6">Email</h4>
+      <input type="email" id="email-input" maxlength="40">
+      <h4 class="fs-6">Date</h4>
+      <input type="date" id="date-input">
+      <h4 class="fs-6">Start Time</h4>
+      <input type="time" id="starttime-input">
+      <h4 class="fs-6">End Time</h4>
+      <input type="time" id="endtime-input">
+      <button id="submit-btn" class="btn-primary">Submit</button>
+      <button id="delete-btn" class="btn-primary"> Delete All</button>
+      <button class="btn-primary" id="night-mode">Toggle
+        <img src="nightmode.png" alt="nightmode" height="10px" id="nightday-img">
+    </button>
+    
+
+  </div>
+</div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
